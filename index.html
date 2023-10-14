@@ -6,8 +6,8 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link rel="stylesheet" media="screen and (min-width: 1024px) and (max-width: 1440px)" href="laptop.css" />
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="media-queries-header.css">
     <script src="script.js" async></script>
 </head>
 <body>
@@ -29,11 +29,18 @@
                 <li class="sections">Услуги</li>
                 <li class="sections">Отзывы</li>
                 <li class="sections">Контакты</li>
-                <li>RU
-                    <svg width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 1.5L7 6.5L2 1.5" stroke="#6B53F6" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></li>
-                    <div>
-                        
+                <li class="language-burger-container">
+                    <div class="select-language">
+                        RU
+                        <svg width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 1.5L7 6.5L2 1.5" stroke="#6B53F6" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
                     </div>
+                    <div class="burger-menu">
+                        <span class="burger-line"></span>
+                        <span class="burger-line"></span>
+                        <span class="burger-line"></span>
+                    </div>
+                    
+                </li>
             </ul>
         </nav>
     </header>
@@ -59,18 +66,20 @@
                 </div>
             </div>
         </section>
-        <section class="about">
-            <div class="left">
-            </div>
-            <div class="right">
-                <p style="color: #F17E4E; font-size: 21px;">О КОМПАНИИ</p>
-                <h2 style="font-size: 40px; width: 670px; line-height: 50px">Инновационная школа казахского языка "FlowLingo"</h2>
-                <div style="width: 770px; font-size: 20px; height: 390px; line-height: 36px; display: flex; flex-direction: column; justify-content: space-between;">
-                    <p>Добро пожаловать в “FlowLingo" – превосходную онлайн школу, специализирующуюся в изучении казахского языка.</p>
-                    <p>Учите казахский язык с удовольствием и в удобное для вас время, получайте доступ к интересным учебным материалам и интерактивным заданиям, которые разработаны специально для вас. Используйте нашу инновационную систему "Казахский Flow", чтобы облегчить процесс запоминания и применения языковых навыков в реальных ситуациях.</p>
-                    <p>Присоединяйтесь к "FlowLingo" сегодня и начинайте свой языковой путь к успеху и культурному обогащению через изучение казахского языка онлайн!</p>
+        <section class="about-container">
+            <div class="about">
+                <div class="about-left">
                 </div>
-                <button class="reservation">Записаться</button>
+                <article class="about-right">
+                    <p class="about-right-text">О КОМПАНИИ</p>
+                    <h2 style="font-size: 28px; width: 100%; line-height: 42px">Инновационная школа казахского языка "FlowLingo"</h2>
+                    <article class="about-right-p">
+                        <p>Добро пожаловать в “FlowLingo" – превосходную онлайн школу, специализирующуюся в изучении казахского языка.</p>
+                        <p>Учите казахский язык с удовольствием и в удобное для вас время, получайте доступ к интересным учебным материалам и интерактивным заданиям, которые разработаны специально для вас. Используйте нашу инновационную систему "Казахский Flow", чтобы облегчить процесс запоминания и применения языковых навыков в реальных ситуациях.</p>
+                        <p>Присоединяйтесь к "FlowLingo" сегодня и начинайте свой языковой путь к успеху и культурному обогащению через изучение казахского языка онлайн!</p>
+                    </article>
+                    <button class="reservation">Записаться</button>
+                </article>
             </div>
         </section>
         <section class="advantages">
