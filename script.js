@@ -52,12 +52,12 @@ cards.forEach(card => {
         const answer = card.querySelector('.answer');
 
         if (!card.classList.contains('expanded')) {
-            card.style.minHeight = (parseInt(getComputedStyle(card).minHeight) + 50) + 'px';
+            card.style.height = '200px';
             answer.style.display = "block";
             card.style.border = "2px solid #6B53F6";
             card.classList.add('expanded');
         } else {
-            card.style.minHeight = '117px';
+            card.style.height = '80px';
             answer.style.display = "none";
             card.style.border = "2px solid #E0E0E0";
             card.classList.remove('expanded');

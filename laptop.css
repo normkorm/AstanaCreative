@@ -146,7 +146,6 @@ main {
     align-items: center;
     justify-content: center;
     width: 100%;
-    min-height: 394px;
 }
 
 .advantages {
@@ -290,31 +289,44 @@ main {
 /*page 5*/
 .questions-container {
     display: flex;
+    justify-content: center;
     align-items: center;
+    width: 100%;
+    height: 714px;
+}
+
+.questions-card-container {
+    display: flex;
     flex-direction: column;
-    gap: 100px;
-    width: 1370px;
-    min-height: 1027px;
+    align-items: center;
+    gap: 50px;
+    width: 83.334%;
+    height: 100%;
+}
+
+.questions-cards {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 15px;
+    height: 100%;
 }
 
 .questions {
     display: flex;
     flex-direction: column;
     gap: 15px;
-    max-width: 1370px;
-    min-height: 700px;
 }
 
 .questions-card {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    padding-left: 50px;
+    padding-left: 5%;
     border-radius: 20px;
     border: 2px solid #E0E0E0;
-    width: 1370px;
-    min-height: 117px;
-    transition: min-height 0.3s ease;
+    height: 80px;
+    transition: height 0.3s ease;
 }
 
 .questions-card h3 {
@@ -351,18 +363,24 @@ main {
     transform: rotate(90deg);
 }
 
+/*page 6*/
+
 .partners {
     display: flex;
-    justify-content: space-between;
     flex-direction: column;
     width: 100%;
     align-items: center;
-    height: 334px;
+    max-height: 334px;
+    gap: 50px;
 }
 
 .logos-container {
     overflow: hidden;
     width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .logos {
@@ -370,7 +388,7 @@ main {
     flex-direction: row;
     width: max-content;
     animation: scroll 10s linear infinite;
-    height: 150px;
+    height: 100%;
     gap: 20px;
 }
 
@@ -378,7 +396,7 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 150px;
+    height: 100%;
     width: 216px;
 }
 
@@ -393,7 +411,7 @@ main {
         transform: translateX(0);
     }
     100% {
-        transform: translateX(-100%); /* Логотипы будут двигаться влево */
+        transform: translateX(-100%);
     }
 }
 
@@ -455,6 +473,6 @@ main {
     height: 40px;
 }
 
-.gallery, .questions-container, .partners, .reviews {
+.gallery, .reviews {
     display: none;
 }
