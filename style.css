@@ -14,6 +14,7 @@ main {
     align-items: center;
     gap: 100px;
     overflow: hidden;
+    min-width: 0;
 }
 
 
@@ -528,122 +529,39 @@ header {
     }
 }
 
-
-
-.reviews {
+.swiper {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    width: 150%;
-    gap:50px;
-}
-
-.review-cards {
+    max-width: 2385px;
+    height: 800px;
     width: 100%;
-    display: flex;
-    flex-direction: row;
-    gap: 50px;
-    align-items: center;
-    justify-content: center;
-    height: 70%;
+    margin: 0;
 }
 
-.one-card {
-    height: 100%;
-    background-color: #FFF2EC;
-    border-radius: 16px;
+
+.swiper-wrapper {
+    box-sizing: content-box;
+    height: 672px;
+}
+
+.swiper-slide {
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 100%;
+    background-color: #fff2ec;
+    border-radius: 35px;
 }
 
 .review-card-inside {
-    height: 90%;
-    width: 80%;
     display: flex;
-    justify-content: space-between;
     flex-direction: column;
-}
-
-.review-card-text {
-    font-size: calc(12px + 8 * (100vw - 1024px) / (1920 - 1024));
-}
-
-.name {
-    font-size: calc(14px + 8 * (100vw - 1024px) / (1920 - 1024));
-    color: #828282;
-}
-
-.left-right-buttons {
-    display: flex;
     justify-content: space-between;
-    flex-direction: row;
-    width: 110px;
-    height: 40px;
+    width: 80%;
+    height: 80%;
 }
 
-.swipe-button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 40px;
-    height: 40px;
-}
+.swiper-button-next {
 
-.gallery {
-    display: none;
-}
-
-@media (min-width: 1441px) and (max-width: 1920px) {
-    .one-card {
-        max-width: 453px;
-        max-height: 653px;
-        height: 946px;
-    }
-}
-
-@media (min-width: 1024px) and (max-width: 1440px) {
-    .one-card {
-        max-width: 363px;
-        max-height: 420px;
-        height: 946px;
-    }
-    .review-card-inside svg {
-        width: 50px;
-    }
-    .review-card-text {
-        font-size: 14px;
-    }
-}
-
-@media (min-width: 768px) and (max-width: 1023px) {
-    .one-card {
-        max-width: 350px;
-        max-height: 320px;
-        height: 946px;
-    }
-    .review-card-inside svg {
-        width: 30px;
-    }
-    .review-card-text {
-        font-size: 11px;
-    }
-}
-
-@media (min-width: 50px) and (max-width: 767px) {
-    .review-cards {
-        width: 320px;
-    }
-    .one-card {
-        max-height: 400px;
-        min-width: 300px;
-        height: 946px;
-    }
-    .review-card-inside svg {
-        width: 50px;
-    }
-    .review-card-text {
-        font-size: 14px;
-    }
 }

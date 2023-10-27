@@ -9,6 +9,12 @@ const reservation1 = document.querySelector(".reservation1");
 const reservation2 = document.querySelector(".reservation2");
 const reservation3 = document.querySelector(".reservation3");
 
+const reviewCards = document.querySelector('.review-cards');
+const prevButton = document.getElementById('prevButton');
+const nextButton = document.getElementById('nextButton');
+
+
+
 
 cardFocus.forEach((card) => {
     card.addEventListener("mouseenter", (evt) => {
@@ -64,30 +70,5 @@ cards.forEach(card => {
         }
     });
 });
-
-document.addEventListener("DOMContentLoaded", function() {
-    const slider = document.querySelector(".slider");
-    const frames = document.querySelectorAll(".frame");
-    const prevButton = document.querySelector(".prev-button");
-    const nextButton = document.querySelector(".next-button");
-
-    let currentIndex = 0;
-
-    prevButton.addEventListener("click", () => {
-        currentIndex = (currentIndex - 1 + frames.length) % frames.length;
-        updateSlider();
-    });
-
-    nextButton.addEventListener("click", () => {
-        currentIndex = (currentIndex + 1) % frames.length;
-        updateSlider();
-    });
-
-    function updateSlider() {
-        const translateX = -currentIndex * 100;
-        slider.style.transform = `translateX(${translateX}%)`;
-    }
-});
-
 
 
