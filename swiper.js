@@ -1,18 +1,26 @@
-const swiper = new Swiper('.reviews', {
+const swiper = new Swiper('.swiper', {
     // Optional parameters
     direction: 'horizontal',
+    slidesPerView: 1,
+    spaceBetween: 30,
+    centeredSlides: true,
+    initialSlide: 2,
     loop: true,
-
-    slidesPerView: 4,
-
-    // Navigation arrows
     navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
+        nextEl: ".swipe-right",
+        prevEl: ".swipe-left",
     },
 
-    // And if we need scrollbar
-    scrollbar: {
-        el: '.swiper-scrollbar',
-    },
+
+    breakpoints: {
+        500: {
+            slidesPerView: 1.5,
+        },
+        800: {
+            slidesPerView: 2,
+        },
+        1400: {
+            slidesPerView: 3.5,
+        },
+    }
 });

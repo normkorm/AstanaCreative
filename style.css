@@ -532,16 +532,15 @@ header {
 .swiper {
     display: flex;
     flex-direction: column;
-    max-width: 2385px;
-    height: 800px;
     width: 100%;
     margin: 0;
+    gap: 50px;
+    position: relative;
 }
-
 
 .swiper-wrapper {
     box-sizing: content-box;
-    height: 672px;
+    position: relative;
 }
 
 .swiper-slide {
@@ -549,9 +548,24 @@ header {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    min-height: 100%;
-    background-color: #fff2ec;
+    background-color: #fffaf8;
     border-radius: 35px;
+    min-width: 300px;
+    min-height: 672px;
+}
+
+
+.swiper-slide-active {
+    background-color: #fff2ec;
+}
+
+.review-card-text {
+    font-size: 20px;
+    line-height: 36px;
+}
+
+.name {
+    color: #828282;
 }
 
 .review-card-inside {
@@ -560,8 +574,16 @@ header {
     justify-content: space-between;
     width: 80%;
     height: 80%;
+    gap: 30px;
 }
 
-.swiper-button-next {
-
+.swipe-left {
+    width: 50%; display: flex; justify-content: center; align-items: center; cursor: pointer
 }
+
+.swipe-right {
+    width: 50%; display: flex; justify-content: center; align-items: center; cursor: pointer
+}
+
+/*new page*/
+
