@@ -6,11 +6,16 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <script src="https://unpkg.com/imask"></script>
+    <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="script.js" type="module"></script>
+    <script src="index.js" type="module"></script>
     <script src="swiper.js" type="module"></script>
     <link rel="stylesheet" href="style.css">
+    <script src="FormValidator.js" type="module"></script>
 </head>
 <body>
 <header>
@@ -392,8 +397,27 @@
             </div>
         </div>
     </section>
-    <section class="">
-
+    <section class="sign-up">
+        <div class="sign-up-form-container-container">
+            <div class="sign-up-form-container">
+                <article style="display: flex; justify-content: center; flex-direction: column; width: 80%; line-height: 36px; gap: 50px">
+                    <h2 style="font-size: 40px;">Записаться на курсы</h2>
+                    <p style="font-size: 20px;">Заполните форму, чтобы зарегистрироваться сейчас и начать свой языковой путь!</p>
+                </article>
+                <form id="sign-up-form">
+                    <div class="input-name-container">
+                        <input type="text" placeholder="Ваше имя*" id="input-name">
+                        <div class="input__error"></div>
+                    </div>
+                    <div class="input-number-container">
+                        <input type="text" placeholder="Номер телефона*" id="input-number">
+                        <div class="input__error"></div>
+                    </div>
+                    <button type="submit" class="button-form-submit">Отправить</button>
+                    <label for="terms-and-conditions" style="display: flex; flex-direction: row; text-align: left; gap: 20px"><input type="checkbox" id="terms-and-conditions"/>Нажимая кнопку “Отправить” вы соглашаетесь предоставить ваши персональные данные и обработку данных.</label>
+                </form>
+            </div>
+        </div>
     </section>
 </main>
 <footer></footer>

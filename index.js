@@ -71,4 +71,3 @@ cards.forEach(card => {
     });
 });
 
-

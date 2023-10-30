@@ -1,5 +1,4 @@
 const swiper = new Swiper('.swiper', {
-    // Optional parameters
     direction: 'horizontal',
     slidesPerView: 1,
     spaceBetween: 30,
@@ -24,3 +23,5 @@ const swiper = new Swiper('.swiper', {
         },
     }
 });
+
+export const aldi = 987;

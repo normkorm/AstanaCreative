@@ -587,3 +587,48 @@ header {
 
 /*new page*/
 
+.sign-up {
+    width: 100%;
+    height: 1151px;
+    background-image: url("photos/wave.svg");
+    display: flex;
+    background-position: center;
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.sign-up-form-container-container {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sign-up-form-container {
+    width: 590px;
+    min-height: 735px;
+    background-color: white;
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    border-radius: 16px;
+}
+
+#sign-up-form {
+    display: flex; flex-direction: column; gap:20px; width: 80%
+}
+
+
+#sign-up-form div input {
+    width: 100%; height: 65px; border-radius: 16px; border: 1px solid #E0E0E0; padding-left: 8%; font-size: 20px;
+}
+
+.button-form-submit {
+    background-color: #F17E4E; color: white; font-size: 20px; border: 1px solid #E0E0E0; height: 65px; border-radius: 16px
+}
+
