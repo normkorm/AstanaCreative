@@ -11,9 +11,11 @@
             rel="stylesheet"
             href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
+    <script src="https://api-maps.yandex.ru/v3/?apikey=aea6dda6-12d7-4b3a-9558-c00a2124b4fa&lang=ru_RU"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="index.js" type="module"></script>
     <script src="swiper.js" type="module"></script>
+    <script src="yandex-map.js"></script>
     <link rel="stylesheet" href="style.css">
     <script src="FormValidator.js" type="module"></script>
 </head>
@@ -401,24 +403,41 @@
         <div class="sign-up-form-container-container">
             <div class="sign-up-form-container">
                 <article style="display: flex; justify-content: center; flex-direction: column; width: 80%; line-height: 36px; gap: 50px">
-                    <h2 style="font-size: 40px;">Записаться на курсы</h2>
+                    <h2 style="font-size: 40px; padding-top: 50px">Записаться на курсы</h2>
                     <p style="font-size: 20px;">Заполните форму, чтобы зарегистрироваться сейчас и начать свой языковой путь!</p>
                 </article>
                 <form id="sign-up-form">
                     <div class="input-name-container">
                         <input type="text" placeholder="Ваше имя*" id="input-name">
-                        <div class="input__error"></div>
+                        <div class="input-name-error">
+                            <p><u>Поле “Ваше имя” обязательно к заполнению</u></p>
+                        </div>
                     </div>
                     <div class="input-number-container">
                         <input type="text" placeholder="Номер телефона*" id="input-number">
-                        <div class="input__error"></div>
+                        <div class="input-number-error">
+                            <p><u>Поле “Номер телефона” обязательно к заполнению</u></p>
+                        </div>
                     </div>
                     <button type="submit" class="button-form-submit">Отправить</button>
-                    <label for="terms-and-conditions" style="display: flex; flex-direction: row; text-align: left; gap: 20px"><input type="checkbox" id="terms-and-conditions"/>Нажимая кнопку “Отправить” вы соглашаетесь предоставить ваши персональные данные и обработку данных.</label>
+                    <label for="terms-and-conditions" style="display: flex; line-height: 28px; cursor: pointer; flex-direction: row; text-align: left; gap: 20px"><input type="checkbox" style="width: 25px; height: 25px; cursor: pointer;" id="terms-and-conditions"/><p>Нажимая кнопку “Отправить” вы соглашаетесь предоставить ваши <u style="color: #2F80ED">персональные данные и обработку данных.</u></p></label>
+                    <div class="errors">
+                        <p>Пожалуйста, заполните все обязательные поля формы перед отправкой. Мы ценим ваш интерес к нашим курсам и готовы ответить на все ваши вопросы.</p>
+                    </div>
                 </form>
             </div>
         </div>
     </section>
+    <section id="YMapsID">
+
+    </section>
+    <dialog data-modal id="thank-you">
+        <div id="close-button">X</div>
+        <div style="width: 80%; height: 70%; display: flex; justify-content: center; align-items: center; flex-direction: column; gap: 50px">
+            <h2>Спасибо!</h2>
+            <p>Спасибо за вашу запись! Мы рады приветствовать вас на наших курсах по изучению казахского языка. В ближайшее время с вами свяжется наш специалист для уточнения деталей.</p>
+        </div>
+    </dialog>
 </main>
 <footer></footer>
 </body>
